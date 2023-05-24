@@ -28,7 +28,12 @@
   <body>
     <div id="cesiumContainer"></div>
     <script>
-	const viewer = new Cesium.Viewer("cesiumContainer");
+	const viewer = new Cesium.Viewer("cesiumContainer", {
+  timeline: false,
+  animation: false,
+  sceneModePicker: false,
+  baseLayerPicker: false,
+});
     </script>
   </body>
 </html>
